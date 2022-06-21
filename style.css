@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lightcoral;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+header, form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    border: none;
+    font-size: large;
+    padding: 5px;
+    color: white;
+    background-color: rgb(123, 95, 247);
+
+}
+form button{
+    transition: 0.3s;
+}
+form button:hover{
+    cursor: pointer;
+    background-color: rgb(7, 30, 243);
+}
+.todo-container{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    width: 100%;
+    list-style: none;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    align-items: center;
+    flex: 1 1;
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+}
+.delete-btn{
+    padding: 10px;
+    border: none;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 10%;
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+.delete-btn:hover{
+    color: red;
+}
+.fall{
+    transition: 0.5s;
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
